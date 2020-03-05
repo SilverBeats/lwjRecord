@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* mask盒子 */
+.mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, .2);
+	transition: opacity .2s linear;
+}
+
+/* 录音界面盒子 */
+.record_box {
+	/* 录音界面固定位置 */
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	width: 100%;
+	height: 40%;
+	/* 录音界面背景颜色 */
+	background-color: white;
+}
+
+/* 工具栏，包括按钮与时间 */
+.tool_box {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: 100%;
+}
+
+/* 录音界面盒子 */
+.record_contentBox {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	padding: 1% 2% 0;
+}
+
+/* 工具栏区域中的展示时间部分 */
+.showTime {
+	position: relative;
+	height: 30%;
+}
+
+/* 显示时间的样式 */
+.showTime_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+}
+
+/* 工具栏区域中的展示按钮部分 */
+.button_list {
+	height: 70%;
+}
+
+/* 开始、暂停等按钮的样式 */
+.button_box_one>button {
+	font-size: 16px;
+	padding: 0 12px;
+}
+
+/* 播放、暂停播放，停止播放按钮 */
+.button_box_two>button {
+	font-size: 16px;
+	padding: 0 12px;
+}
+
+/* 录音列表展示区域盒子 */
+.record_list_contentBox {
+	position: relative;
+	margin-bottom: 2px;
+}
+
+/* 录音文件名 */
+.record_list_contentTitle {
+	display: inline-block;
+	width: 85%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+/* 录音列表的选择框 */
+.record_list_checkbox {
+	position: absolute;
+	right: 0;
+}
+
+/* 当前录音列表 */
+.record_list_title {
+	/* 标题距离列表内容的距离 */
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+/* 删除录音按钮的样式 */
+.delete_record {
+	position: absolute;
+	width: 35%;
+	bottom: 3%;
+	right: 2%;
+	font-size: 16px;
+}
